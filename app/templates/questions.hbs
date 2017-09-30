@@ -4,5 +4,23 @@
   {{#link-to 'about' class = "button"}}
   About Us
   {{/link-to}}
+
+{{#each model as |question|}}
+<article class = "listing">
+
+  <div class = "detail question">
+    <span>Question:</span> {{question.question}}
+  </div>
+  <div class = "detail question">
+    <span>Answer:</span> {{question.answer}}
+  </div>
+  <div class = "detail question">
+    <span>Author:</span> {{question.author}}
+  </div>
+  <div class = "detail question">
+    <span>Notes:</span> {{question.notes}}
+  </div>
+</article>
+{{/each}}
 </div>
 {{outlet}}
