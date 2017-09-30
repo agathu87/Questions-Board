@@ -7,7 +7,9 @@
 
 {{#each model as |question|}}
 <article class = "listing">
-
+  <div class = "detail question">
+    <span><strong>Question:</strong></span> {{question.title}}
+  </div>
   <div class = "detail question">
     <span>Question:</span> {{question.question}}
   </div>
