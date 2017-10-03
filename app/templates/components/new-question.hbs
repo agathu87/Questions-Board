@@ -1,0 +1,17 @@
+{{#if showNewQuestion}}
+
+<form>
+  <label for="actualQuestion">Question</label>
+  {{input value=actualQuestion id="actualQuestion"}}
+  <label for="author">Author</label>
+  {{input value=author id="author"}}
+  <label for="notes">Notes</label>
+  {{input value=notes id="notes"}}
+  <button {{action "newQuestion"}}>Ask?</button>
+  <button {{action "hideNewQuestion"}}>Cancel</button>
+</form>
+{{else}}
+  <button {{action "showNewQuestion"}}>Ask a question?</button>
+
+{{/if}}
+{{yield}}
