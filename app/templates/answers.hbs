@@ -1,1 +1,17 @@
-{{outlet}}
+<div class="jumbo">
+{{#each model as |answer|}}
+<article class = "listing">
+  <div class = "detail answer">
+    <span><strong>Answer</strong></span> {{answer.title}}
+  </div>
+  <div class = "detail answer">
+    <span>Answer:</span> {{answer.answer}}
+  </div>
+
+  <div class = "detail answer">
+    <span>Author:</span> {{answer.author}}
+  </div>
+
+</article>
+{{/each}}
+</div>
